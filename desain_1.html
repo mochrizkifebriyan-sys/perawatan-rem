@@ -1,0 +1,80 @@
+/* --- CSS Reset Sederhana & Styling Dasar --- */
+body {
+    font-family: Arial, sans-serif; /* Pilihan font yang mudah dibaca */
+    line-height: 1.6; /* Keterbacaan yang lebih baik */
+    margin: 0; /* Hapus margin default browser */
+    padding: 0;
+    background-color: #f4f4f4; /* Warna latar belakang ringan */
+    color: #333;
+}
+
+/* --- Container Utama --- */
+header, section {
+    width: 90%;
+    max-width: 800px; /* Batasi lebar maksimum konten */
+    margin: 20px auto; /* Tengahkan konten dengan margin otomatis */
+    padding: 20px;
+    background-color: #ffffff; /* Latar belakang putih untuk konten */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}
+
+/* --- Styling Header --- */
+header {
+    background-color: #007bff; /* Warna biru untuk header */
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 8px 8px 0 0; /* Sudut membulat hanya di atas */
+    box-shadow: none; /* Hapus bayangan agar fokus pada warna */
+    margin-bottom: 0; /* Hilangkan margin bawah agar menyatu dengan konten pertama */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    letter-spacing: 1px;
+}
+
+/* --- Styling Judul Bagian --- */
+h3 {
+    font-size: 1.5em;
+    color: #0056b3; /* Warna biru lebih gelap */
+    border-bottom: 2px solid #ccc; /* Garis bawah pemisah */
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+h4 {
+    font-size: 1.2em;
+    color: #007bff;
+    margin-top: 20px;
+}
+
+/* --- Styling Paragraf dan Poin Perawatan --- */
+p {
+    margin-bottom: 15px;
+    padding-left: 15px; /* Sedikit indentasi untuk konten */
+    border-left: 3px solid #ffc107; /* Garis kuning sebagai penanda poin */
+}
+
+/* --- Responsif Sederhana (untuk perangkat seluler) --- */
+@media (max-width: 600px) {
+    header, section {
+        width: 95%; /* Lebih lebar di layar kecil */
+        padding: 15px;
+        margin: 10px auto;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    h4 {
+        font-size: 1.1em;
+    }
+}
